@@ -1,0 +1,19 @@
+public class App {
+    public static void main(String[] args) {
+    a = float(imput(ingrese el primer valor de a: "))
+    b = float(imput(ingrese el segundo valor de b: "))
+    if a > b :
+    duma = a + b
+    diferencia = a-b
+    print(suma:",suma)
+    print(diferencia:",diferencia)
+     else:
+    producto = a * b
+        print(producto:",producto)
+        if b == 0;
+        print(division no definida)
+        else:
+        diision = a/b 
+        division(division:",division)
+    }
+}

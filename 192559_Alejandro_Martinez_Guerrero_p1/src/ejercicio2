@@ -1,0 +1,20 @@
+public class App {
+    public static void main(String[] args) {
+n1 = float(imput(ingrese la primera nota: "))
+n2 = float(imput(ingrese la segunda nota: "))
+n3 = float(imput(ingrese la tercera nota: "))
+
+if not (0.0 <= n1 <= 5.0) or not (0.0 <= n2 <= 5.0) or not (0.0 <= n3 <= 5.0):
+    print("Nota invalida")
+else:
+    promedio = (n1 + n2 + n3) / 3
+    print(f"Promedio: {promedio:.2f}")
+
+    if promedio >= 4.5:
+        print("Estado: Promocionado")
+    elif promedio >= 4.0:
+        print("Estado: Regular")
+    else:
+        print("Estado: Reprobado")
+    }
+}
