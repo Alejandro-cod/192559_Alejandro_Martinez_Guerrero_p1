@@ -1,20 +1,42 @@
 public class App {
     public static void main(String[] args) {
-n1 = float(imput(ingrese la primera nota: "))
-n2 = float(imput(ingrese la segunda nota: "))
-n3 = float(imput(ingrese la tercera nota: "))
+import java.util.Scanner;
 
-if not (0.0 <= n1 <= 5.0) or not (0.0 <= n2 <= 5.0) or not (0.0 <= n3 <= 5.0):
-    print("Nota invalida")
-else:
-    promedio = (n1 + n2 + n3) / 3
-    print(f"Promedio: {promedio:.2f}")
+public class App {
+    public static void main(String[] args) {
 
-    if promedio >= 4.5:
-        print("Estado: Promocionado")
-    elif promedio >= 4.0:
-        print("Estado: Regular")
-    else:
-        print("Estado: Reprobado")
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Ingrese la primera nota: ");
+        float n1 = scanner.nextFloat();
+
+        System.out.print("Ingrese la segunda nota: ");
+        float n2 = scanner.nextFloat();
+
+        System.out.print("Ingrese la tercera nota: ");
+        float n3 = scanner.nextFloat();
+
+        if (n1 < 0.0 || n1 > 5.0 || 
+            n2 < 0.0 || n2 > 5.0 || 
+            n3 < 0.0 || n3 > 5.0) {
+
+            System.out.println("Nota inválida");
+
+        } else {
+            float promedio = (n1 + n2 + n3) / 3;
+            System.out.printf("Promedio: %.2f\n", promedio);
+
+            if (promedio >= 4.5) {
+                System.out.println("Estado: Promocionado");
+            } else if (promedio >= 4.0) {
+                System.out.println("Estado: Regular");
+            } else {
+                System.out.println("Estado: Reprobado");
+            }
+        }
+
+        scanner.close();
     }
+}
+
 }
